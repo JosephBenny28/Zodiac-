@@ -1,0 +1,41 @@
+.about-des h1 {
+    padding-bottom: 20px;
+}
+.about-des h5{
+    padding-bottom: 20px;
+
+}
+.about-des p{
+    padding-bottom: 20px;
+ 
+}
+
+.about-des h5 {
+    word-spacing: 3px;
+    font-size: 30px;
+}
+
+.about-des button {
+    width: 150px;
+    border-radius: none;
+}
+
+.des-bag {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+
+  
+    overflow: hidden;
+}
+.about-img img{
+    object-fit: cover;
+}
+
+.des-txt {
+    display: grid;
+   place-items: center;
+    align-content: center;
+}

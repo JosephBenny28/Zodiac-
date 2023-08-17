@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+
+.lef-ban {
+
+  background: linear-gradient(rgba(24, 23, 23, 0.411), rgba(24, 23, 23, 0.411)), url(./Component/images/bg-w.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-cap {
+  text-align: center;
+  color: white;
+  position: absolute;
+
+}
+
+.card-img-top {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+
+
+.cart {
+  min-height: 700px;
+}
+
+.empty-cart {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  flex-direction: column;
+
+}
+
+.empty-cart h1 {
+  font-weight: 500;
+}
+
+.empty-cart h2 {
+  font-size: 40px;
+  padding: 20px 25px;
+  margin: 10px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 60px;
+}
+
+.cart-table td {
+  height: 100px;
+  text-align: center;
+  vertical-align: start;
+}
+
+.cart-btn {
+  width: 20px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  margin: 0 10px;
+
+}
+
+.cart-rem-btn {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  margin: 0 10px;
+}
+
+.cart-rem-btn:hover {
+  background-color: black;
+  color: red;
+}
+
+.cart-inp {
+  width: 20px;
+  height: 30px;
+  text-align: center;
+
+}
+
+.cart-input {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+ 
+}
+
+.cart-product-name {
+  display: none;
+}
+.cart-product-name-d {
+  display: none;
+}
+
+
+
+@media screen and (min-width:576px) {
+  .card-img-top {
+    object-fit: cover;
+  }
+
+  .cart-btn {
+    width: 40px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    margin: 0 10px;
+
+  }
+
+  .cart-inp {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+  }
+}
+
+.total-cart{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (min-width:768px) {
+  .cart-product-name {
+    display: block;
+    
+  }
+  .cart-product-name-d {
+    display: block;
+    height: 120px;
+  }
+}

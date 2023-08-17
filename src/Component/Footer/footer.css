@@ -1,0 +1,24 @@
+.footer{
+    color: rgb(223, 223, 223);
+}
+
+.footer-txt{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footer-txt span{
+    color: rgb(90, 252, 241);
+}
+
+.footer-txt p:hover span{
+    color: rgb(218, 7, 105);
+}
+.footer-txt a{
+    color: rgb(90, 252, 241);
+    padding: 0 4px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-txt a:hover {
+    color: rgb(218, 7, 105);
+}
