@@ -8,7 +8,7 @@
 }
 
 .login-main {
-    width: 25%;
+    width: 80%;
     min-height: 320px;
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -67,4 +67,22 @@
 
 .error{
     color: rgb(209, 1, 1);
+}
+
+@media screen and (min-width:475px) {
+    .login-main {
+        width: 60%;}
+}
+
+@media screen and (min-width:576px) {
+    .login-main {
+        width: 50%;}
+}
+@media screen and (min-width:768px) {
+    .login-main {
+        width: 40%;}
+}
+@media screen and (min-width:992px) {
+    .login-main {
+        width: 25%;}
 }
