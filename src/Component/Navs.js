@@ -35,6 +35,7 @@ export default function Navs() {
                     <Link to="/contact" className="nav-link">Contact</Link>
                   </li>
 
+
                   <Link type="button"  to="/login" className="btn btn-outline-dark ms-2 my-2 my-lg-0"><RiLoginBoxLine /> Login</Link>
                   <Link type="button"  to="/cart" className="btn btn-outline-dark ms-2 my-2 my-lg-0"><FaCartShopping /> Cart {cartProducts?.cart?.length}</Link>
                 </ul>
