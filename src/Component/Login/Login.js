@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm()
+  const { register, handleSubmit,  formState: { errors } } = useForm()
   const submit = (data) => console.log(data)
   return (
     <>

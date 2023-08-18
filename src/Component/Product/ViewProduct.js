@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation , Link} from 'react-router-dom';
 import "./product.css"
 import { useDispatch } from 'react-redux';
 import { add } from '../../Store/CartSlice';
@@ -37,7 +37,7 @@ function ViewProduct() {
             <p className="card-text">{productData.description}</p>
             <p className="card-text">${productData.price}</p>
             <button className='btn btn-outline-dark' onClick={() => addToCart(productData)}> Add to cart</button>
-
+            <Link to="/cart" className="btn go-cart mx-3">Go to cart</Link>
           </div>
         </div>
       </div>

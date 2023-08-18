@@ -36,9 +36,10 @@ const Cart = () => {
           <div className='container'>
             <Table className='flex-direction-column'>
               <thead>
-                <tr className='text-center'>
+                <tr className='text-center '>
                   <th>Product</th>
                   <th className='cart-product-name'>Product Name</th>
+                  
                   <th>Price</th>
                   <th>Quantity</th>
                   <th>Total</th>
@@ -47,9 +48,10 @@ const Cart = () => {
               </thead>
               <tbody className='cart-table'>
                 {productCart.cart.map(products => (
-                  <tr key={products.id}>
-                    <td><img src={products.image} width={100} alt='Product' /></td>
+                  <tr key={products.id} >
+                    <td><img src={products.image} width={80} alt='Product' /></td>
                     <td className='cart-product-name-d'>{products.title}</td>
+                    
                     <td>${products.price}</td>
                     <td className='cart-input'>
                       <button className='cart-btn' onClick={() => decreaseQuantity(products.id)}> - </button>

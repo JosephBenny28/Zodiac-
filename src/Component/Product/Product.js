@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { jsondata } from "./Products.js";
 import './product.css';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { add } from '../../Store/CartSlice';
 
@@ -76,13 +76,15 @@ function Products() {
                                 return (
                                     <div className=" col-sm-6 col-lg-3 p-3 my-3">
                                         <div >
-                                            <div className="card " key={product.id} >                                                    
-                                            <img src={product.image} onClick={() => viewProduct(product)} className="card-img-top" alt={product.title} />
+                                            <div className="card " key={product.id} >
+                                                <img src={product.image} onClick={() => viewProduct(product)} className="card-img-top" alt={product.title} />
                                                 <div className="card-body"  >
                                                     <h4 className="card-title">{product.title}</h4>
                                                     <p className="card-text">${product.price}</p>
-                                                    <button  onClick={() => addToCart(product)} class="btn btn-outline-dark "  >Add to cart </button>
-
+                                                    <div className="card-butn">
+                                                    <button onClick={() => addToCart(product)} class="btn btn-outline-dark "  >Add to cart </button>
+                                                    <Link to="/cart" className="btn go-cart">Go to cart</Link>
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -94,7 +96,7 @@ function Products() {
                     </div>
                 </div>
             </div>
-           
+
         </div>
     )
 }
